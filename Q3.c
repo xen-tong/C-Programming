@@ -1,24 +1,19 @@
-//if a number is grater than 9 and less than 100 then print there true ........
+//Write a Program to find if a character entered by used is upper case or not........
 #include<stdio.h>
 int main(){
-printf("Enter A number:");
-int x,res;
-scanf("%d",&x);
+char ch;
+printf("Enter Upper Case Latter:");
+scanf(" %c",&ch);
 
-//logical operator
-res=9<x && x<100;
+if(ch>='A' && ch<='Z' ){
+    printf("Upper Case");
 
-
-//print section
-printf("%d\n\n",res);
-
-//conditions
-printf("===============Conditions===============\n");
-printf("If It Shows 1 Thats Mean It's True\n");
-printf("If It Shows 0 Thats Mean It's false\n");
-return 0;
-
-
-
+}
+else if(ch>='a' && ch<='z' ){
+    printf("Lower Case");
+}
+else{
+    printf ("Entered A Wrong");
+}
 
 }
